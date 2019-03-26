@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.newspaper {
+  background-color: #fff8ee;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 0.5em;
+  margin: 1em auto;
+  border-radius: 1em;
+  max-width: 64em;
+  padding: 1em;
+}
+.topHeader {
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  padding-top: 0.5em;
+  height: 160px;
+  display: flex;
+}
+.logoIconImg {
+  width: 9.6875em;
+  margin-top: 1em;
+}
+.logoNameImg {
+  padding: 0 0.5em 0 0;
+}
+.logoCaption {
+  letter-spacing: 0.3125em;
+}
+.exclusiveHeader {
+  background-color: green;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  height: 94px;
+}
+.newsArticles {
+  background-color: pink;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border: 1px solid #1c1915;
+  height: 1254px;
+}
+.weatherNews {
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  height: 122px;
+}
+.newsTeaser {
+  background-color: lightblue;
+  grid-template-columns: repeat(4, auto) 90px auto;
+  grid-template-rows: 3.75em;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  height: 68px;
+}
+.newsFooter {
+  background-color: orange;
+  border: 0.125em solid #1c1915;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  height: 46px;
+  padding: 0.5em;
+}

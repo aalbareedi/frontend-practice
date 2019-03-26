@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+}
+.mainSiteNavbar {
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.navLogo {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+.navIcon {
+  background-color: blue;
+}
+.contentBox1 {
+  height: calc(100vh - 80px);
+  /* height: 500px; */
+  background-color: lightblue;
+}
+.contentBox2 {
+  height: 500px;
+  background-color: lightcoral;
+}
+.contentBox3 {
+  height: 500px;
+  background-color: lightgray;
+}
