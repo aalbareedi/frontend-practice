@@ -1,0 +1,32 @@
+body > div {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.box1 {
+  background-color: red;
+  height: 300px;
+  margin-top: 80px;
+  position: relative;
+}
+.box2 {
+  background-color: blue;
+  height: 300px;
+}
+.box3 {
+  background-color: yellow;
+  height: 300px;
+}
+.box4 {
+  background-color: green;
+  height: 300px;
+}
+.child {
+  background-color: aqua;
+  height: 100px;
+  margin: 0 30px;
+}
+.grandChild {
+  background-color: gray;
+  position: absolute;
+  bottom: 15px;
+}
