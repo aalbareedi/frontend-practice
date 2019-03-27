@@ -3,11 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #fff;
-}
 .mainSiteNavbar {
-  background-color: #fff;
+  background-color: pink;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +21,6 @@ body {
 }
 .contentBox1 {
   height: calc(100vh - 80px);
-  /* height: 500px; */
   background-color: lightblue;
 }
 .contentBox2 {
@@ -34,4 +30,26 @@ body {
 .contentBox3 {
   height: 500px;
   background-color: lightgray;
+}
+.sideNavWindow {
+  background-color: #fff;
+  position: fixed;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25);
+}
+.sideNavMenu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sideNavOpt {
+  /* background-color: red; */
 }
