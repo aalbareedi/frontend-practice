@@ -40,16 +40,41 @@
   right: 0;
   box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25);
 }
+.sideNavCancel {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 33px;
+  padding-top: 16px;
+}
 .sideNavMenu {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.2em;
-  letter-spacing: 0.2em;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  margin-top: 42px;
 }
 .sideNavOpt {
-  /* background-color: red; */
+  width: 100%;
+  padding: 9px 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+.sideNavOpt:hover {
+  cursor: pointer;
+  color: #1f93ff;
+}
+.sideNavText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+}
+.dropDownIcon {
+  color: #1f93ff;
+  font-size: 1.4em;
+  margin-left: 14px;
+  margin-top: 1px;
+}
+.cancelIcon {
+  font-size: 1.5em;
+  cursor: pointer;
 }
