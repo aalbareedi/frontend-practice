@@ -1,12 +1,19 @@
-#firstPara {
-  font-size: 1rem;
+.title {
+  font-size: 1.5em;
 }
-html {
-  font-size: 20px;
+.caption {
+  font-size: 1em;
 }
-/* body {
-  font-size: 20px;
-} */
-.parentDiv {
-  font-size: 1rem;
+.text {
+  font-size: 2rem;
+}
+
+#container {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+#container2 {
+  background-color: pink;
+  height: 50vh;
 }

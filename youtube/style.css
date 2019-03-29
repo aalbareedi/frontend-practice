@@ -107,7 +107,7 @@ button {
   height: 36px;
   padding-top: 10px;
   width: 60px;
-  left: 2px;
+  left: 3px;
 }
 #searchBtn:hover .searchToolTip {
   visibility: visible;
@@ -160,7 +160,7 @@ button {
 }
 .navIcon2ToolTip {
   width: 98px;
-  left: -27px;
+  left: -28px;
 }
 .navIcon3ToolTip {
   width: 75px;
@@ -264,10 +264,9 @@ button {
 }
 /*-----------------VIDEOS-----------------*/
 .recommendedVids {
-  /* background-color: gray; */
   margin-right: auto;
   margin-left: auto;
-  height: 474px;
+  height: 456px;
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: repeat(6, 210px);
@@ -275,13 +274,26 @@ button {
   grid-gap: 4px;
 }
 .videoBox {
-  /* background-color: darkgray; */
+  cursor: pointer;
+}
+.thumbnailBox {
+  position: relative;
 }
 .videoThumbnail {
   width: 100%;
 }
+.videoTime {
+  position: absolute;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px 4px;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+  font-size: 0.75em;
+  right: 4px;
+  bottom: 8px;
+}
 .videoTitle {
-  /* background-color: orange; */
   font-weight: 500;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -292,14 +304,12 @@ button {
   font-size: 0.8em;
 }
 .channelName {
-  /* background-color: lightgreen; */
   display: inline-block;
   margin-bottom: 2px;
   color: #606060;
   text-decoration: none;
 }
 .videoStats {
-  /* background-color: yellow; */
   color: #606060;
 }
 .viewCount {
@@ -307,9 +317,6 @@ button {
 }
 .uploadDate {
   margin-left: 4px;
-}
-#video1 {
-  display: block;
 }
 
 /* 5 columns */
