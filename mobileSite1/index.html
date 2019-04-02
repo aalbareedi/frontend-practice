@@ -6,6 +6,7 @@
     <!--- Allows mobile devices to scale to size -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Site #1</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -30,22 +31,26 @@
       </div>
       <div class="navToggleIcon"><i class="fas fa-bars navToggleBtn"></i></div>
     </nav>
+
     <div class="sideNavWindow">
+
       <div class="sideNavBar"><i class="fas fa-times cancelIcon"></i></div>
+
       <div class="sideNavMenu">
-        <div class="sideNavOpt">
+        <div class="sideNavHeading">
           <div class="sideNavText">FEATURES</div>
           <i class="fas fa-chevron-down dropDownIcon"></i>
         </div>
-        <div class="sideNavOpt">
+        <div class="sideNavSubHeading">sub heading</div>
+        <div class="sideNavHeading">
           <div class="sideNavText">SOLUTIONS</div>
           <i class="fas fa-chevron-down dropDownIcon"></i>
         </div>
-        <div class="sideNavOpt">
+        <div class="sideNavHeading">
           <div class="sideNavText">COMPANY</div>
           <i class="fas fa-chevron-down dropDownIcon"></i>
         </div>
-        <div class="sideNavOpt">
+        <div class="sideNavHeading">
           <div class="sideNavText">RESOURCES</div>
           <i class="fas fa-chevron-down dropDownIcon"></i>
         </div>
@@ -59,19 +64,23 @@
 
       <div class="sideNavContact">
         <div class="contactInfo">
-          <div class="address">
+          <div class="addressBox">
+          <div class="addressText">
             4251 N. Milwaukee Ave Chicago, Illinois 60641
           </div>
-          <div class="phoneNumber">(773) 282-0013</div>
         </div>
+        <div class="phoneNumberBox">
+          <div class="phoneNumberText">(773) 282-0013</div>
+        </div>
+      </div>
         <div class="contactBtns">
           <button class="contactBtn" id="directionsBtn">
-            <i class="fas fa-map-marker-alt contactIcon directionsIcon"></i
-            >Directions
+            <i id="directionsIcon" class="fas fa-map-marker-alt contactIcon"></i
+            ><div class="contactBtnText">Directions</div>
           </button>
 
           <button class="contactBtn" id="callBtn">
-            <i class="fas fa-phone contactIcon callIcon"></i>Call
+            <i id="callIcon" class="fas fa-phone contactIcon"></i><div class="contactBtnText">Call</div>
           </button>
         </div>
       </div>

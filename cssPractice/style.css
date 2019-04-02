@@ -1,32 +1,9 @@
-* {
-  color: pink;
-}
-
-.green {
-  color: green;
-  text-decoration: none;
-  font-size: 2em;
-  background-color: lightgray;
-}
-#youtube {
-  color: inherit;
-  text-decoration: inherit;
-}
-#facebook {
-  color: initial;
-}
-
-.firstBox {
-  background-color: yellow;
-  width: 10%;
-  display: inline-block;
-}
-
-.para {
-  color: initial;
-  font-size: initial;
-  width: 60%;
-  display: inline-block;
-  background-color: aquamarine;
-  margin: 0 auto;
+.mainDiv {
+  background-color: pink;
+  height: 500px;
+  width: 100%;
+  background-image: url("./images/logoEx.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
