@@ -1,9 +1,21 @@
-.mainDiv {
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
   background-color: pink;
   height: 500px;
+  width: 500px;
+}
+img {
   width: 100%;
-  background-image: url("./images/logoEx.svg");
+  height: 100%;
+  object-fit: cover;
+}
+.elephant {
+  background-image: url("./images/elephant.jpg");
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  height: 500px;
 }

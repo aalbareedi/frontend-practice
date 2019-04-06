@@ -68,25 +68,51 @@
 .sideNavMenu {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 7%;
 }
 .sideNavHeading {
-  background-color: pink;
-  padding: 9px 24px;
+  /* background-color: pink; */
+  padding-right: 24px;
+  padding-left: 24px;
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  height: 40px;
+  padding-bottom: 6px;
 }
 .sideNavHeading:hover {
   cursor: pointer;
   color: #1f93ff;
+  /* background-color: lightblue; */
 }
-.sideNavSubHeading {
+#sideNavSubHeading1 {
   display: none;
-  background-color: green;
+}
+#sideNavSubHeading2 {
+  display: none;
+}
+#sideNavSubHeading3 {
+  display: none;
+}
+#sideNavSubHeading4 {
+  display: none;
+}
+.subHeadingOpt {
+  text-align: right;
+  padding: 10px 62px;
+  color: #616161;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+}
+.subHeadingOpt:hover {
+  color: #1f93ff;
+  /* background-color: pink; */
 }
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
+  /* background-color: red; */
   font-weight: 600;
   font-size: 1.3em;
   letter-spacing: 0.2em;
@@ -95,7 +121,125 @@
   color: #1f93ff;
   font-size: 1.4em;
   margin-left: 14px;
-  margin-top: 1px;
+  margin-bottom: 3px;
+}
+.sideNavBtnBar {
+  /* background-color: red; */
+  margin-top: 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sideNavBtn {
+  background-color: white;
+  color: #1f93ff;
+  border-radius: 50px;
+  width: 43%;
+  max-width: 160px;
+  margin-right: 50px;
+  height: 44px;
+  border: 2px solid #1f93ff;
+  cursor: pointer;
+  outline: none;
+  /* box-shadow: 3px 5px 12px rgba(50, 50, 50, 0.25); */
+}
+/* .sideNavBtn:hover {
+  background-color: #1f93ff;
+  color: white;
+} */
+.sideNavBtn:active {
+  background-color: #1f93ff;
+  color: white;
+}
+.messageIcon {
+  margin-right: 6px;
+}
+.sideNavContactForm {
+  display: grid;
+  /* display: none; */
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  background-color: #616161;
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  top: 25%;
+  height: 50%;
+  border-radius: 20px;
+  z-index: 10;
+}
+.contactFormOpt {
+  /* height: 56px; */
+}
+#contactFormOpt1 {
+  background-color: lightblue;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#contactFormOpt2 {
+  display: flex;
+}
+.firstNameField {
+  background-color: orange;
+  width: 50%;
+}
+.lastNameField {
+  background-color: purple;
+  width: 50%;
+}
+#contactFormOpt3 {
+  display: flex;
+}
+.emailField {
+  background-color: lightblue;
+  width: 50%;
+}
+.phoneField {
+  background-color: orange;
+  width: 50%;
+}
+#contactFormOpt4 {
+  background-color: yellow;
+}
+#contactFormOpt5 {
+  background-color: orange;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contactFormSubmitBtn {
+  background-color: green;
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 64%;
+  border-radius: 6px;
+}
+.messageMenuTitle {
+  /* background-color: orange; */
+  font-size: 1.2em;
+}
+.messageCancelBtn {
+  background-color: lightblue;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0 20px 0 0;
+  outline: none;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.messageCancelIcon {
+  font-size: 1.7em;
 }
 .sideNavSocialMedia {
   background-color: orange;
@@ -125,15 +269,17 @@
   bottom: 0;
 }
 .contactInfo {
-  /* background-color: green; */
+  background-color: white;
   display: flex;
   padding-bottom: 5px;
   font-size: 13px;
+  height: 42px;
 }
 .addressBox {
   width: 50%;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 .phoneNumberBox {
   width: 50%;

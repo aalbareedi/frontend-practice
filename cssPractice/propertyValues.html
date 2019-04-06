@@ -9,6 +9,31 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="mainDiv"></div>
+    <div id="container">
+      <img
+        class="elephant"
+        srcset="
+          ./images/elephant-320.png   320w,
+          ./images/elephant-480.png   480w,
+          ./images/elephant-1800.png 1800w
+        "
+        sizes="(max-width: 320px) 320px,
+                (max-width: 480px) 480px,
+                (min-width: 481px) 1800px"
+      />
+    </div>
+    <div class="container">
+      <img
+        class="bird"
+        srcset="
+          ./images/bird-320.png   320w,
+          ./images/bird-480.png   480w,
+          ./images/bird-1800.png 1800w
+        "
+        sizes="(max-width: 320px) 320px,
+        (max-width: 640px) 480px,
+        (min-width: 641px) 1800px"
+      />
+    </div>
   </body>
 </html>
