@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-/*************** NAV BAR ***************/
+
+/* ******************** MAIN NAV-BAR ******************** */
+
 .mainSiteNavbar {
   background-color: #48b5f3;
   height: 80px;
@@ -13,33 +15,41 @@
   position: sticky;
   top: 0;
 }
-.navLogo {
+.navBrand {
   display: flex;
   align-items: center;
 }
-.brandLogo {
-  background-color: white;
-  width: 40px;
+.navLogoIcon {
+  /* background-color: white; */
+  width: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
-.brandName {
+.navLogoName {
   /* background-color: pink; */
+  width: 130px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navToggleIcon {
-  width: 70px;
+.navToggleBtn {
+  width: 76px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.navToggleBtn {
-  font-size: 2em;
+.navToggleIcon {
+  font-size: 1.6em;
   color: white;
 }
-/************** SIDE NAV **************/
+
+/* *********************** SIDE NAV WINDOW *********************** */
+
 .sideNavWindow {
   /* display: none; */
   background-color: #fff;
@@ -50,41 +60,56 @@
   right: 0;
   box-shadow: -1px 0 50px rgba(0, 0, 0, 0.25);
 }
+
+/* **************** SIDE NAV-BAR **************** */
+
 .sideNavBar {
   background-color: #48b5f3;
   height: 80px;
+  position: relative;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 24px;
-  padding-top: 24px;
+}
+.sideNavCancelBtn {
+  background-color: #48b5f3;
+  width: 74px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
 }
 .cancelIcon {
-  font-size: 2em;
+  font-size: 1.7em;
   cursor: pointer;
+  color: white;
 }
 .cancelIcon:hover {
   opacity: 0.6;
 }
+
+/* **************** SIDE NAV MENU **************** */
+
 .sideNavMenu {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  margin-top: 7%;
+  /* padding-top: 5px; */
 }
 .sideNavHeading {
-  /* background-color: pink; */
-  padding-right: 24px;
-  padding-left: 24px;
+  background-color: whitesmoke;
+  position: relative;
   cursor: pointer;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 40px;
-  padding-bottom: 6px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 .sideNavHeading:hover {
   cursor: pointer;
   color: #1f93ff;
-  /* background-color: lightblue; */
 }
 #sideNavSubHeading1 {
   display: none;
@@ -99,12 +124,14 @@
   display: none;
 }
 .subHeadingOpt {
-  text-align: right;
-  padding: 10px 62px;
+  background-color: whitesmoke;
   color: #616161;
   cursor: pointer;
-  font-size: 18px;
-  height: 40px;
+  font-size: 16px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .subHeadingOpt:hover {
   color: #1f93ff;
@@ -112,22 +139,30 @@
 }
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
-  /* background-color: red; */
   font-weight: 600;
-  font-size: 1.3em;
-  letter-spacing: 0.2em;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  /* background-color: lightblue; */
 }
-.dropDownIcon {
+.dropDownMarker {
+  /* background-color: yellow; */
+  position: absolute;
+  right: 29px;
+  /* display: none; */
+}
+.dropDownMarkerIcon {
   color: #1f93ff;
-  font-size: 1.4em;
-  margin-left: 14px;
-  margin-bottom: 3px;
+  /* font-size: 1.4em; */
+  /* margin-left: 14px;
+  margin-bottom: 3px; */
 }
+
+/* ************* SIDE NAV MESSAGE BUTTON ************* */
+
 .sideNavBtnBar {
-  /* background-color: red; */
-  margin-top: 5%;
+  background-color: lightblue;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 .sideNavBtn {
@@ -136,7 +171,6 @@
   border-radius: 50px;
   width: 43%;
   max-width: 160px;
-  margin-right: 50px;
   height: 44px;
   border: 2px solid #1f93ff;
   cursor: pointer;
@@ -154,77 +188,42 @@
 .messageIcon {
   margin-right: 6px;
 }
+
+/* ******************* CONTACT FORM ******************* */
+
 .sideNavContactForm {
   display: grid;
-  /* display: none; */
-  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-  background-color: #616161;
+  display: none;
+  grid-template-rows: 60px 90px 50px 50px 120px 70px;
+  background-color: whitesmoke;
   position: fixed;
-  left: 10px;
-  right: 10px;
-  top: 25%;
-  height: 50%;
-  border-radius: 20px;
+  left: 0px;
+  right: 0px;
+  top: 14%;
+  /* border-radius: 10px; */
   z-index: 10;
-}
-.contactFormOpt {
-  /* height: 56px; */
+  border: 1px solid #bdc7d8;
 }
 #contactFormOpt1 {
-  background-color: lightblue;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #bdc7d8;
+  background-color: whitesmoke;
 }
-#contactFormOpt2 {
-  display: flex;
-}
-.firstNameField {
-  background-color: orange;
-  width: 50%;
-}
-.lastNameField {
-  background-color: purple;
-  width: 50%;
-}
-#contactFormOpt3 {
-  display: flex;
-}
-.emailField {
-  background-color: lightblue;
-  width: 50%;
-}
-.phoneField {
-  background-color: orange;
-  width: 50%;
-}
-#contactFormOpt4 {
-  background-color: yellow;
-}
-#contactFormOpt5 {
-  background-color: orange;
-  border-radius: 0 0 20px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contactFormSubmitBtn {
-  background-color: green;
-  outline: none;
-  border: none;
-  width: 50%;
-  height: 64%;
-  border-radius: 6px;
-}
+/* .contactFormIcon {
+  color: #999;
+} */
 .messageMenuTitle {
-  /* background-color: orange; */
   font-size: 1.2em;
+  color: gray;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .messageCancelBtn {
-  background-color: lightblue;
+  background-color: whitesmoke;
   position: absolute;
   right: 0px;
   height: 100%;
@@ -233,14 +232,128 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border-radius: 0 20px 0 0;
+  border-radius: 0 10px 0 0;
   outline: none;
   border: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #bdc7d8;
+  color: gray;
+}
+.messageCancelBtn:active {
+  background-color: gainsboro;
 }
 .messageCancelIcon {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
+#contactFormOpt2 {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+}
+.contactFormSubHeading {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+#contactFormOpt3 {
+  display: flex;
+  padding: 0px 20px 0px 20px;
+}
+.firstNameField {
+  width: 50%;
+  height: 40px;
+  padding-right: 5px;
+}
+.lastNameField {
+  width: 50%;
+  height: 40px;
+  padding-left: 5px;
+}
+.emailField {
+  width: 100%;
+  height: 40px;
+}
+.contactFormInput {
+  height: 100%;
+  border: 1px solid #bdc7d8;
+  /* border-radius: 5px; */
+  padding-left: 8px;
+  width: 100%;
+  outline: none;
+}
+.contactFormInput:focus {
+  border: 1px solid #48b5f3;
+  outline: none;
+}
+.contactFormInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1; /* Firefox */
+}
+.contactFormInput::-webkit-input-placeholder {
+  color: #999;
+}
+.contactFormInput::-ms-input-placeholder {
+  /* Internet Explorer 10-11, Edge */
+  color: #999;
+}
+#contactFormOpt4 {
+  padding: 0px 20px 0px 20px;
+}
+#contactFormOpt5 {
+  padding: 0px 20px 0px 20px;
+}
+.messageInput {
+  border: 1px solid #bdc7d8;
+  /* border-radius: 5px; */
+  padding: 8px 8px 0 8px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+.messageInput:focus {
+  border: 1px solid #48b5f3;
+  outline: none;
+}
+.messageInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1; /* Firefox */
+}
+.messageInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999;
+}
+.messageInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999;
+}
+#contactFormOpt6 {
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#contactFormSubmitBtn {
+  background-color: #48b5f3;
+  color: white;
+  outline: none;
+  border: none;
+  width: 33%;
+  height: 100%;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  height: 40px;
+}
+#contactFormSubmitBtn:active {
+  background-color: white;
+  color: #48b5f3;
+  border: 1px solid #48b5f3;
+}
+
+/* **************** SOCIAL MEDIA **************** */
+
 .sideNavSocialMedia {
   background-color: orange;
   position: absolute;
@@ -249,6 +362,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+#instagramIcon {
+}
+#facebookIcon {
+}
+#linkedinIcon {
 }
 .socialMediaIcon {
   background-color: lightgray;
@@ -263,7 +382,10 @@
 .socialMediaIcon:active {
   font-size: 1.8em;
 }
-.sideNavContact {
+
+/* **************** BUTTONS DOCK **************** */
+
+.sideNavDock {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -290,14 +412,12 @@
 .addressText {
   max-width: 180px;
   text-align: center;
-  /* background-color: orange; */
 }
 .phoneNumberText {
   color: black;
-  /* background-color: pink; */
 }
 .contactBtns {
-  background-color: lightgray;
+  background-color: gainsboro;
   height: 68px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,28 +468,27 @@
 .contactBtnText {
   margin-left: 5px;
 }
-/*************** CONTENT ***************/
+
+/* ************************** CONTENT ************************** */
+
 .contentBox2 {
   height: 500px;
   background-color: lightcoral;
 }
 .landingContent {
   height: calc(100vh - 80px);
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 .landingInfoBox {
-  /* background-color: pink; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50%;
+  height: 60%;
   margin-top: 60px;
 }
 .landingHeading {
-  /* background-color: lightgreen; */
   padding: 0 20px;
   text-align: center;
   width: 90%;
@@ -377,7 +496,6 @@
   font-size: 2.3em;
 }
 .landingSubHeading {
-  /* background-color: lightgrey; */
   padding: 0 20px;
   text-align: center;
   width: 90%;

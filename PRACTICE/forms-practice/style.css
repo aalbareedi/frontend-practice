@@ -1,0 +1,22 @@
+form {
+}
+
+input {
+  display: block;
+}
+
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+}
+
+input[type="text"] {
+}
+
+input:focus:required:invalid {
+  border: 1px solid red;
+}
+
+input:required:valid {
+  border: 1px solid green;
+}

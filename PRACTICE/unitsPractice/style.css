@@ -1,0 +1,19 @@
+.title {
+  font-size: 1.5em;
+}
+.caption {
+  font-size: 1em;
+}
+.text {
+  font-size: 2rem;
+}
+
+#container {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+#container2 {
+  background-color: pink;
+  height: 50vh;
+}

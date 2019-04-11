@@ -25,21 +25,32 @@
   </head>
   <body>
     <nav class="mainSiteNavbar">
-      <div class="navLogo">
-        <div class="brandLogo">X</div>
-        <div class="brandName">Brand Name</div>
+      <div class="navBrand">
+        <div class="navLogoIcon">O</div>
+        <div class="navLogoName">Braces Specialist</div>
       </div>
-      <div class="navToggleIcon"><i class="fas fa-bars navToggleBtn"></i></div>
+      <div class="navToggleBtn">
+        <i class="fas fa-bars navToggleIcon"></i>
+      </div>
     </nav>
 
     <div class="sideNavWindow">
-
-      <div class="sideNavBar"><i class="fas fa-times cancelIcon"></i></div>
+      <nav class="sideNavBar">
+        <div class="navBrand">
+          <div class="navLogoIcon">O</div>
+          <div class="navLogoName">Braces Specialist</div>
+        </div>
+        <button class="sideNavCancelBtn">
+          <i class="fas fa-times cancelIcon"></i>
+        </button>
+      </nav>
 
       <div class="sideNavMenu">
         <div class="sideNavHeading">
           <div class="sideNavText">FEATURES</div>
-          <i class="fas fa-chevron-down dropDownIcon"></i>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
         </div>
         <div id="sideNavSubHeading1">
           <div class="subHeadingOpt">About</div>
@@ -48,7 +59,9 @@
         </div>
         <div class="sideNavHeading">
           <div class="sideNavText">SOLUTIONS</div>
-          <i class="fas fa-chevron-down dropDownIcon"></i>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
         </div>
         <div id="sideNavSubHeading2">
           <div class="subHeadingOpt">About</div>
@@ -57,7 +70,9 @@
         </div>
         <div class="sideNavHeading">
           <div class="sideNavText">COMPANY</div>
-          <i class="fas fa-chevron-down dropDownIcon"></i>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
         </div>
         <div id="sideNavSubHeading3">
           <div class="subHeadingOpt">About</div>
@@ -66,7 +81,9 @@
         </div>
         <div class="sideNavHeading">
           <div class="sideNavText">RESOURCES</div>
-          <i class="fas fa-chevron-down dropDownIcon"></i>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
         </div>
         <div id="sideNavSubHeading4">
           <div class="subHeadingOpt">About</div>
@@ -74,59 +91,105 @@
           <div class="subHeadingOpt">Careers</div>
         </div>
       </div>
-      
-      <div class="sideNavBtnBar">
-        <button class="sideNavBtn"><i class="fas fa-comment messageIcon"></i>Message Us</button>
-        <div class="sideNavContactForm">
-          <div class="contactFormOpt" id="contactFormOpt1">
-            <div class="messageMenuTitle">Message Us</div>
-            <button class="messageCancelBtn"><i class="fas fa-times messageCancelIcon"></i></button>
-          </div>
-          <div class="contactFormOpt" id="contactFormOpt2">
-            <div class="firstNameField">First Name</div>
-            <div class="lastNameField">Last Name</div>
-          </div>
-          <div class="contactFormOpt" id="contactFormOpt3">
-              <div class="emailField">Email</div>
-              <div class="phoneField">Phone Number</div>  
-          </div>
-          <div class="contactFormOpt" id="contactFormOpt4">Message</div>
-          <div class="contactFormOpt" id="contactFormOpt5">
-            <button id="contactFormSubmitBtn">Submit</button>
+
+      <!-- <div class="sideNavBtnBar">
+        <button class="sideNavBtn">
+          <i class="fas fa-comment messageIcon"></i>Message Us
+        </button>
+      </div> -->
+
+      <form class="sideNavContactForm">
+        <div id="contactFormOpt1">
+          <!-- <i class="fas fa-comment contactFormIcon"></i> -->
+          <div class="messageMenuTitle">Message Us</div>
+          <button type="button" class="messageCancelBtn">
+            <i class="fas fa-times messageCancelIcon"></i>
+          </button>
+        </div>
+        <div id="contactFormOpt2">
+          <div class="contactFormSubHeading">
+            We would love to hear from you! Please feel free to send us a
+            message below and we will get back to you shortly.
           </div>
         </div>
-      </div>
+        <div id="contactFormOpt3">
+          <div class="firstNameField">
+            <input
+              required
+              type="text"
+              class="contactFormInput"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="lastNameField">
+            <input
+              required
+              type="text"
+              class="contactFormInput"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div id="contactFormOpt4">
+          <div class="emailField">
+            <input
+              required
+              type="email"
+              class="contactFormInput"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div id="contactFormOpt5">
+          <textarea
+            required
+            class="messageInput"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div id="contactFormOpt6">
+          <button type="submit" id="contactFormSubmitBtn">Send</button>
+        </div>
+      </form>
 
-      <div class="sideNavSocialMedia">
-        <div class="socialMediaIcon"><i class="fab fa-instagram"></i></div>
-        <div class="socialMediaIcon"><i class="fab fa-linkedin-in"></i></i></div>
-        <div class="socialMediaIcon"><i class="fab fa-facebook-f"></i></i></div>
-      </div>
+      <!-- <div class="sideNavSocialMedia">
+        <div id="instagramIcon" class="socialMediaIcon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div id="linkedinIcon" class="socialMediaIcon">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div id="facebookIcon" class="socialMediaIcon">
+          <i class="fab fa-facebook-f"></i>◊
+        </div>
+      </div> -->
 
-      <div class="sideNavContact">
+      <div class="sideNavDock">
         <div class="contactInfo">
           <div class="addressBox">
-          <div class="addressText">
-            4251 N. Milwaukee Ave Chicago, Illinois 60641
+            <div class="addressText">
+              4251 N. Milwaukee Ave Chicago, Illinois 60641
+            </div>
+          </div>
+          <div class="phoneNumberBox">
+            <div class="phoneNumberText">(773) 282-0013</div>
           </div>
         </div>
-        <div class="phoneNumberBox">
-          <div class="phoneNumberText">(773) 282-0013</div>
-        </div>
-      </div>
         <div class="contactBtns">
           <button class="contactBtn" id="directionsBtn">
-            <i id="directionsIcon" class="fas fa-map-marker-alt contactIcon"></i
-            ><div class="contactBtnText">Directions</div>
+            <i
+              id="directionsIcon"
+              class="fas fa-map-marker-alt contactIcon"
+            ></i>
+            <div class="contactBtnText">Directions</div>
           </button>
 
           <button class="contactBtn" id="callBtn">
-            <i id="callIcon" class="fas fa-phone contactIcon"></i><div class="contactBtnText">Call</div>
+            <i id="callIcon" class="fas fa-phone contactIcon"></i>
+            <div class="contactBtnText">Call</div>
           </button>
         </div>
       </div>
-
-
     </div>
 
     <div class="landingContent">
