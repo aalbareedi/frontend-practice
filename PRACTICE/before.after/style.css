@@ -1,0 +1,61 @@
+/* .text:before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background-color: #999;
+  margin-right: 20px;
+}
+
+.text:after {
+  content: "text";
+  display: inline-block;
+  color: green;
+  margin-left: 20px;
+}
+
+.caption:after {
+  content: "content after";
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  height: 320px;
+  position: relative;
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("./gradient.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flares {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("./fortniteEffect.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.bus {
+  height: 100%;
+  width: 100%;
+  background-image: url("./bus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  max-width: 272px;
+  margin: 0 auto;
+  z-index: 1;
+}

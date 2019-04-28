@@ -100,7 +100,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
   border-radius: 2px;
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   text-align: center;
   top: 49px;
@@ -109,9 +109,13 @@ button {
   width: 60px;
   left: 3px;
   z-index: 1;
+  /* transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s; */
+  transition: opacity 0.5s ease 0.3s;
 }
 #searchBtn:hover .searchToolTip {
-  visibility: visible;
+  opacity: 1;
 }
 .searchIcon {
   opacity: 0.6;
@@ -148,13 +152,18 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 0.8em;
   border-radius: 2px;
-  visibility: hidden;
+  /* visibility: hidden; */
+  opacity: 0;
   position: absolute;
   text-align: center;
   top: 50px;
   height: 36px;
   padding-top: 2px;
   z-index: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+  transition: opacity 0.5s 0.3s;
 }
 .navIcon1ToolTip {
   width: 141px;
@@ -177,7 +186,7 @@ button {
   left: -4px;
 }
 .iconContainer:hover .iconToolTip {
-  visibility: visible;
+  opacity: 1;
 }
 
 .youtubeContent {

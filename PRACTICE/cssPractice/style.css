@@ -2,17 +2,12 @@ body {
   margin: 0;
   padding: 0;
 }
-#container {
-  background-color: pink;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-.imgContainer {
-}
 
-img {
-  width: 100%;
-  height: 100%;
+.myImage {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0px -100px;
+  /* width: 100%;
+  height: 100%; */
 }
