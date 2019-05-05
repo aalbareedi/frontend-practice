@@ -4,25 +4,28 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+/* html {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+} */
 
 /* ******************** MAIN NAV-BAR ******************** */
 
 .mainSiteNavbar {
+  z-index: 10;
   background-color: #48b5f3;
-  height: 60px;
+  background-color: white;
+  height: 64px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-}
-.navBrand {
-  display: flex;
-  align-items: center;
+  border-bottom: 2px solid #e8e8e8;
 }
 .navLogoIcon {
-  /* background-color: white; */
-  width: 50px;
+  /* background-color: pink; */
+  width: 60px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -30,23 +33,43 @@
   font-size: 1.5em;
 }
 .navLogoName {
-  /* background-color: pink; */
-  width: 130px;
+  /* background-color: yellow; */
+  width: 190px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.businessNameText {
+  /* background-color: lightgreen; */
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.doctorNameText {
+  /* background-color: lightblue; */
+  /* display: none; */
+  font-size: 13px;
+  font-weight: bold;
+}
+#certification {
+  font-weight: initial;
 }
 .navToggleBtn {
+  /* background-color: pink; */
   width: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  /* border-left: 2px solid #e8e8e8; */
 }
 .navToggleIcon {
   font-size: 24px;
-  color: white;
+  color: black;
 }
 .backToTopBtn {
   /* background-color: whitesmoke; */
@@ -66,14 +89,14 @@
 }
 .upBtn {
   font-size: 18px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 /* *********************** SIDE NAV WINDOW *********************** */
 
 .sideNavWindow {
   display: none;
-  background-color: white;
+  /* background-color: white; */
   position: fixed;
   width: 100%;
   height: calc(100vh - 112px);
@@ -138,7 +161,7 @@
 .sideNavText {
   /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   /* background-color: lightblue; */
 }
@@ -146,85 +169,45 @@
   /* background-color: yellow; */
   position: absolute;
   right: 24px;
-  /* display: none; */
 }
 .dropDownMarkerIcon {
   color: #1f93ff;
-  /* font-size: 1.4em; */
-  /* margin-left: 14px;
-  margin-bottom: 3px; */
 }
 
 /* ******************* CONTACT FORM ******************* */
 
 .contactWindow {
   display: none;
-  background-color: pink;
+  background-color: whitesmoke;
   height: 100vh;
   width: 100%;
   z-index: 100;
   position: fixed;
 }
-
-.contactForm {
-  display: grid;
-  grid-template-rows: 54px 70px 100px 44px 44px 44px 100px 50px;
-  background-color: whitesmoke;
-  border-top: 1px solid #bdc7d8;
-  /* height: calc(100vh - 60px); */
-}
-#contactFormTitleRow {
-  position: relative;
+#contactFormTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid #bdc7d8; */
-  background-color: whitesmoke;
+  height: 60px;
 }
-/* .contactFormIcon {
-  color: #999;
-} */
 .messageMenuTitle {
   font-size: 18px;
   color: gray;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-.messageCancelBtn {
-  background-color: whitesmoke;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 0 10px 0 0;
-  outline: none;
-  border: none;
-  border-left: 1px solid #bdc7d8;
-  color: gray;
-}
-.messageCancelBtn:active {
-  background-color: gainsboro;
-}
-.messageCancelIcon {
-  font-size: 1.5em;
-}
 #contactFormDescription {
-  padding: 0px 20px 0px 20px;
-  /* display: flex;
-  align-items: center; */
-  /* text-align: center; */
+  padding: 0px 20px;
+  height: 80px;
 }
 .contactFormSubHeading {
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
 }
 #contactFormFullName {
   display: flex;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
+  height: 50px;
 }
 .firstNameField {
   width: 50%;
@@ -239,7 +222,6 @@
 .contactFormInput {
   height: 100%;
   border: 1px solid #bdc7d8;
-  /* border-radius: 5px; */
   padding-left: 8px;
   width: 100%;
   outline: none;
@@ -262,14 +244,16 @@
   color: #999;
 }
 #contactFormEmail {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
+  height: 50px;
 }
 .emailField {
   width: 100%;
   height: 36px;
 }
 #contactFormPhone {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
+  height: 50px;
 }
 #phoneField {
   width: 100%;
@@ -280,7 +264,6 @@
 }
 .messageInput {
   border: 1px solid #bdc7d8;
-  /* border-radius: 5px; */
   padding: 8px 8px 0 8px;
   width: 100%;
   height: 100%;
@@ -305,15 +288,15 @@
   /* Microsoft Edge */
   color: #999;
 }
-#contactFormExtra {
-  /* background-color: pink; */
-}
 #contactFormButtons {
-  /* background-color: pink; */
+  background-color: whitesmoke;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 56px;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 8px;
+  border-top: 2px solid #e8e8e8;
 }
 .contactFormBtn {
   outline: none;
@@ -325,13 +308,13 @@
   justify-content: center;
   align-items: center;
   color: #616161;
-  border: 2px solid gainsboro;
+  border: 2px solid #c8c8c8;
 }
 #formSubmitBtn {
-  /* background-color: #48b5f3; */
-  /* color: white; */
-  background-color: #e8e8e8;
+  background-color: lightgray;
+  border: none;
   margin-right: 4px;
+  color: darkgray;
 }
 #formSubmitBtn:active {
   background-color: white;
@@ -345,7 +328,6 @@
 .contactFormBtnText {
   font-size: 13px;
   letter-spacing: 0.5px;
-  color: #616161;
   margin-left: 10px;
 }
 
@@ -373,8 +355,9 @@
   align-items: center;
   border-radius: 8px;
   /* border: none; */
-  height: 34px;
-  border: 2px solid gainsboro;
+  height: 38px;
+  border: 2px solid #c8c8c8;
+  width: 100%;
   /* font-weight: 500; */
 }
 .dockContactBtn:active #directionsIcon {
@@ -397,9 +380,11 @@
 }
 #directionsBtn {
   grid-column: 1/3;
+  text-decoration: none;
 }
 #callBtn {
   grid-column: 3/5;
+  text-decoration: none;
 }
 .contactIcon {
   margin-right: 4px;
@@ -427,7 +412,37 @@
 #callBtnText {
   /* left: 55px; */
 }
-#instagramBtn {
+.sideNavMessageBtn {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  grid-column: 5/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: none; */
+  border: 2px solid #c8c8c8;
+  cursor: pointer;
+  outline: none;
+  height: 38px;
+}
+.messageIcon {
+  color: #1f93ff;
+  font-size: 16px;
+  /* left: 12px; */
+  margin-right: 5px;
+  /* position: absolute; */
+}
+.messageBtnText {
+  color: #616161;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  /* position: absolute; */
+  /* right: 10px; */
+}
+
+/* ************* SOCIAL MEDIA ************* */
+
+/* #instagramBtn {
   grid-row: 2/3;
   grid-column: 1/2;
 }
@@ -454,55 +469,19 @@
   font-size: 20px;
   cursor: pointer;
   border-radius: 8px;
-  /* border: 2px solid lightgray; */
   border: none;
 }
 .socialMediaIcon:active {
   font-size: 24px;
-}
-
-/* ************* SIDE NAV MESSAGE BUTTON ************* */
-.sideNavMessageBtn {
-  background-color: #e8e8e8;
-  border-radius: 8px;
-  grid-column: 5/7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: none; */
-  border: 2px solid gainsboro;
-  cursor: pointer;
-  outline: none;
-  height: 34px;
-}
-.messageIcon {
-  color: #1f93ff;
-  font-size: 16px;
-  left: 12px;
-  margin-right: 5px;
-  /* position: absolute; */
-}
-.messageBtnText {
-  color: #616161;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  /* position: absolute; */
-  right: 10px;
-  /* font-weight: 500; */
-}
+} */
 
 /* ************************** CONTENT ************************** */
 
-.contentBox2 {
-  height: 1000px;
-  background-color: white;
-}
 .landingContent {
-  height: calc(100vh - 112px);
+  height: calc(100vh - 120px);
   background-color: white;
   /* display: flex;
   flex-direction: column; */
-  /* padding: 20px; */
 }
 .landingInfoBox {
   background-color: lightblue;
@@ -513,16 +492,75 @@
   /* border-radius: 10px; */
 }
 .landingHeading {
-  padding: 0 20px;
   text-align: center;
   width: 90%;
-  margin: 20 auto;
   font-size: 2em;
+  margin: 0;
 }
 .landingSubHeading {
   padding: 0 20px;
   text-align: center;
   width: 90%;
-  margin: 0 auto;
 }
+
+.statsContent {
+  height: 620px;
+  /* height: calc(100vh - 64px); */
+  background-color: white;
+  padding-top: 20px;
+}
+.statBox {
+  /* background-color: lightblue; */
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+/* #lastStatBox {
+  margin-bottom: 30px;
+} */
+.statNumber {
+  /* background-color: yellow; */
+  height: 60px;
+  color: #1f93ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.statDescription {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.statBtnBar {
+  /* background-color: aqua; */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.learnMoreStatBtn {
+  background-color: #1f93ff;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+}
+
 /* box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.15); */
+.footer {
+  background-color: green;
+  height: 360px;
+}
+.emptyDockSpace {
+  width: 100%;
+  height: 56px;
+}

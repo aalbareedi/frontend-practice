@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <!--- Allows mobile devices to scale to size -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile Site #1</title>
+    <title>Braces Specialist</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -26,9 +26,12 @@
 
   <body>
     <nav class="mainSiteNavbar">
-      <div class="navBrand">
-        <div class="navLogoIcon">O</div>
-        <div class="navLogoName">Braces Specialist</div>
+      <div class="navLogoIcon">O</div>
+      <div class="navLogoName">
+        <div class="businessNameText">Orthodontic Specialty Center</div>
+        <div class="doctorNameText">
+          Said Albareedi <span id="certification">DDS, MS</span>
+        </div>
       </div>
       <div class="navToggleBtn">
         <i class="fas fa-bars navToggleIcon"></i>
@@ -43,23 +46,30 @@
       <!-- 4251 N. Milwaukee Ave Chicago, Illinois 60641
           (773) 282-0013 -->
 
-      <button class="dockContactBtn" id="directionsBtn" type="button">
-        <div class="contactBtnContainer">
-          <div id="directionsIcon" class="contactIcon">
-            <i class="fas fa-map-marker-alt"></i>
+      <a
+        id="directionsBtn"
+        href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+      >
+        <button class="dockContactBtn" type="button">
+          <div class="contactBtnContainer">
+            <div id="directionsIcon" class="contactIcon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contactBtnText" id="directionsBtnText">Directions</div>
           </div>
-          <div class="contactBtnText" id="directionsBtnText">Directions</div>
-        </div>
-      </button>
+        </button>
+      </a>
 
-      <button class="dockContactBtn" id="callBtn" type="button">
-        <div class="contactBtnContainer">
-          <div id="callIcon" class="contactIcon">
-            <i class="fas fa-phone"></i>
+      <a href="tel:773-282-0013" id="callBtn">
+        <button class="dockContactBtn" type="button">
+          <div class="contactBtnContainer">
+            <div id="callIcon" class="contactIcon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contactBtnText" id="callBtnText">Call</div>
           </div>
-          <div class="contactBtnText" id="callBtnText">Call</div>
-        </div>
-      </button>
+        </button>
+      </a>
 
       <button class="sideNavMessageBtn" type="button">
         <div class="contactBtnContainer">
@@ -131,77 +141,71 @@
     </div>
 
     <div class="contactWindow">
-      <div class="contactForm">
-        <div id="contactFormTitleRow">
-          <!-- <i class="fas fa-comment contactFormIcon"></i> -->
-          <div class="messageMenuTitle">Message Us</div>
-          <!-- <button type="button" class="messageCancelBtn">
-          <i class="fas fa-times messageCancelIcon"></i>
-        </button> -->
+      <div id="contactFormTitle">
+        <div class="messageMenuTitle">Message Us</div>
+      </div>
+      <div id="contactFormDescription">
+        <div class="contactFormSubHeading">
+          We would love to hear from you! Please feel free to send us a message
+          below and we will get back to you shortly.
         </div>
-        <div id="contactFormDescription">
-          <div class="contactFormSubHeading">
-            We would love to hear from you! Please feel free to send us a
-            message below and we will get back to you shortly.
-          </div>
-        </div>
-        <div id="contactFormExtra"></div>
-        <div id="contactFormFullName">
-          <div class="firstNameField">
-            <input
-              required
-              type="text"
-              class="contactFormInput"
-              placeholder="First Name"
-            />
-          </div>
-          <div class="lastNameField">
-            <input
-              required
-              type="text"
-              class="contactFormInput"
-              placeholder="Last Name"
-            />
-          </div>
-        </div>
-        <div id="contactFormEmail">
-          <div class="emailField">
-            <input
-              required
-              type="email"
-              class="contactFormInput"
-              placeholder="Email"
-            />
-          </div>
-        </div>
-        <div id="contactFormPhone">
-          <div id="phoneField">
-            <input
-              required
-              type="tel"
-              class="contactFormInput"
-              placeholder="Phone Number"
-            />
-          </div>
-        </div>
-        <div id="contactFormMessage">
-          <textarea
+      </div>
+      <div id="contactFormFullName">
+        <div class="firstNameField">
+          <input
             required
-            class="messageInput"
-            placeholder="Message"
-          ></textarea>
+            type="text"
+            class="contactFormInput"
+            placeholder="First Name"
+          />
         </div>
-        <div id="contactFormButtons">
-          <button type="submit" id="formSubmitBtn" class="contactFormBtn">
-            <i class="fas fa-check"></i>
-            <div class="contactFormBtnText">Send</div>
-          </button>
-          <button type="button" id="formCancelBtn" class="contactFormBtn">
-            <!-- <i class="fas fa-arrow-left"></i> -->
-            <i class="fas fa-times"></i>
-            <div class="contactFormBtnText">Cancel</div>
-          </button>
+        <div class="lastNameField">
+          <input
+            required
+            type="text"
+            class="contactFormInput"
+            placeholder="Last Name"
+          />
         </div>
+      </div>
+      <div id="contactFormEmail">
+        <div class="emailField">
+          <input
+            required
+            type="email"
+            class="contactFormInput"
+            placeholder="Email"
+          />
+        </div>
+      </div>
+      <div id="contactFormPhone">
+        <div id="phoneField">
+          <input
+            required
+            type="tel"
+            class="contactFormInput"
+            placeholder="Phone Number"
+          />
+        </div>
+      </div>
+      <div id="contactFormMessage">
+        <textarea
+          required
+          class="messageInput"
+          placeholder="Message"
+        ></textarea>
+      </div>
+
+      <div id="contactFormButtons">
+        <button type="submit" id="formSubmitBtn" class="contactFormBtn">
+          <i class="fas fa-check"></i>
+          <div class="contactFormBtnText">Send</div>
+        </button>
+        <button type="button" id="formCancelBtn" class="contactFormBtn">
+          <!-- <i class="fas fa-arrow-left"></i> -->
+          <i class="fas fa-times"></i>
+          <div class="contactFormBtnText">Cancel</div>
+        </button>
       </div>
     </div>
 
@@ -215,6 +219,24 @@
         <!-- <span>→</span> -->
       </div>
     </div>
-    <div class="contentBox2">Content Box #2</div>
+    <div class="statsContent">
+      <div class="statBox">
+        <div class="statNumber">30</div>
+        <div class="statDescription">YEARS OF CONSISTENT WORK</div>
+      </div>
+      <div class="statBox">
+        <div class="statNumber">5000+</div>
+        <div class="statDescription">HAPPY SMILES</div>
+      </div>
+      <div class="statBox" id="lastStatBox">
+        <div class="statNumber">100%</div>
+        <div class="statDescription">ATTENTION TO DETAIL</div>
+      </div>
+      <div class="statBtnBar">
+        <button class="learnMoreStatBtn">Learn More →</button>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <div class="emptyDockSpace"></div>
   </body>
 </html>

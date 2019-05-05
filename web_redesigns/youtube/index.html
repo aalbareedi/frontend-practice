@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Specifies the language you will be using for your page -->
+    <meta charset="utf-8" />
+    <!--- Allows mobile devices to scale to size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="mainNav">
+      <div class="logoNav">
+        <button class="toggleButton"><i class="fas fa-bars"></i></button>
+        <a
+          class="noUnderline mainLogo"
+          href="https://www.youtube.com"
+          target="_blank"
+          ><i class="fab fa-youtube youtubeLogo"></i
+          ><span class="logoName">YouTube</span></a
+        >
+      </div>
+      <form id="searchForm">
+        <input id="searchInput" type="text" placeholder="Search" required />
+        <button type="submit" id="searchBtn">
+          <i class="fas fa-search searchIcon"></i>
+          <div class="searchToolTip">Search</div>
+        </button>
+      </form>
+      <div class="iconNav">
+        <span class="fa-stack iconContainer">
+          <i class="fas fa-circle fa-stack-2x activeCircle"></i>
+          <i class="fas fa-video fa-stack-1x iconStyle"></i>
+          <div class="iconToolTip navIcon1ToolTip">Create a video or post</div>
+        </span>
+        <span class="fa-stack iconContainer">
+          <i class="fas fa-circle fa-stack-2x activeCircle"></i>
+          <i class="fas fa-th fa-stack-1x iconStyle"></i>
+          <div class="iconToolTip navIcon2ToolTip">YouTube apps</div>
+        </span>
+        <span class="fa-stack iconContainer">
+          <i class="fas fa-circle fa-stack-2x activeCircle"></i>
+          <i class="fas fa-comment fa-stack-1x iconStyle"></i>
+          <div class="iconToolTip navIcon3ToolTip">Messages</div>
+        </span>
+        <span class="fa-stack iconContainer">
+          <i class="fas fa-circle fa-stack-2x activeCircle"></i>
+          <i class="fas fa-ellipsis-v fa-stack-1x iconStyle"></i>
+          <div class="iconToolTip navIcon4ToolTip">Notifications</div>
+        </span>
+        <span class="fa-stack iconContainer">
+          <i class="fas fa-circle fa-stack-2x activeCircle"></i>
+          <i class="fas fa-user-circle fa-stack-1x iconStyle"></i>
+          <div class="iconToolTip navIcon5ToolTip">Profile</div>
+        </span>
+      </div>
+    </nav>
+    <div class="youtubeContent">
+      <div class="sideNav">
+        <div class="homeMenu">
+          <a href="https://www.youtube.com" class="sideMenuOpt currentOpt">
+            <i class="fas fa-home sideMenuIcon currentPageIcon"></i>
+            <div class="sideMenuText">Home</div>
+          </a>
+
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-fire-alt sideMenuIcon"></i>
+            <div class="sideMenuText">Trending</div>
+          </a>
+
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-portrait sideMenuIcon"></i>
+            <div class="sideMenuText">Subscriptions</div>
+          </a>
+        </div>
+        <div class="shortcutsMenu">
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-folder sideMenuIcon"></i>
+            <div class="sideMenuText">Library</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-history sideMenuIcon"></i>
+            <div class="sideMenuText">History</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-clock sideMenuIcon"></i>
+            <div class="sideMenuText">Watch Later</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-star sideMenuIcon"></i>
+            <div class="sideMenuText">Favorites</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-thumbs-up sideMenuIcon"></i>
+            <div class="sideMenuText">Liked Videos</div>
+          </a>
+        </div>
+        <div class="subscriptionsMenu">
+          <div class="sideHeadline">SUBSCRIPTIONS</div>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #1</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #2</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #3</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #4</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #5</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #6</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #7</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #8</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #9</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Channel Name #10</div>
+          </a>
+        </div>
+        <div class="moreMenu">
+          <div class="sideHeadline">MORE FROM YOUTUBE</div>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fab fa-youtube sideMenuIcon"></i>
+            <div class="sideMenuText">YouTube Premium</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-film sideMenuIcon"></i>
+            <div class="sideMenuText">Movies & Shows</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-gamepad sideMenuIcon"></i>
+            <div class="sideMenuText">Gaming</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-broadcast-tower sideMenuIcon"></i>
+            <div class="sideMenuText">Live</div>
+          </a>
+        </div>
+        <div class="toolsMenu">
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-cog sideMenuIcon"></i>
+            <div class="sideMenuText">Settings</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-flag sideMenuIcon"></i>
+            <div class="sideMenuText">Report history</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-question-circle sideMenuIcon"></i>
+            <div class="sideMenuText">Help</div>
+          </a>
+          <a href="https://www.youtube.com" class="sideMenuOpt">
+            <i class="fas fa-comment-dots sideMenuIcon"></i>
+            <div class="sideMenuText">Send feedback</div>
+          </a>
+        </div>
+        <footer class="footerMenu">
+          <div class="topFooterLinks">
+            <a class="footerLink" href="https://www.youtube.com">About</a>
+            <a class="footerLink" href="https://www.youtube.com">Press</a>
+            <a class="footerLink" href="https://www.youtube.com">Copyright</a>
+            <a class="footerLink" href="https://www.youtube.com">Contact us</a>
+            <a class="footerLink" href="https://www.youtube.com">Creators</a>
+            <a class="footerLink" href="https://www.youtube.com">Advertise</a>
+            <a class="footerLink" href="https://www.youtube.com">Developers</a>
+          </div>
+          <div class="bottomFooterLinks">
+            <a class="footerLink" href="https://www.youtube.com">Terms</a>
+            <a class="footerLink" href="https://www.youtube.com">Privacy</a>
+            <a class="footerLink" href="https://www.youtube.com"
+              >Policy & Safety</a
+            >
+            <a class="footerLink" href="https://www.youtube.com"
+              >Test new features</a
+            >
+          </div>
+          <div class="footerCopyright">© 2019 YouTube, LLC</div>
+        </footer>
+      </div>
+      <div class="recommendedVids">
+        <div class="videoBox" id="video1">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle" title="Hello">Video Title #1</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video2">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">My LONGER YouTube Video Title #2</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">24.9M views</span>&#8226;<span
+                class="uploadDate"
+                >7 months ago</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video3">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #3</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video4">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #4</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video5">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #5</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video6">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #6</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video7">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #7</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video8">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #8</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video9">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #9</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video10">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #10</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video11">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #11</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="videoBox" id="video12">
+          <div class="thumbnailBox">
+            <img class="videoThumbnail" src="images/stockVideoThumbnail.png" />
+            <div class="videoTime">14:29</div>
+          </div>
+          <div class="videoTitle">Video Title #12</div>
+          <div class="videoInfo">
+            <a class="channelName" href="https://www.youtube.com"
+              >Channel Name</a
+            >
+            <div class="videoStats">
+              <span class="viewCount">View Count</span>&#8226;<span
+                class="uploadDate"
+                >Upload Date</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
