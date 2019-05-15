@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <form onsubmit="return false">
+      First Name <input required type="text" pattern="[a-zA-Z]{2,32}" /> number
+      <input type="number" min="1" max="50" /> email <input type="email" />
+
+      password <input type="password" minlength="8" />
+
+      date <input type="date" />
+
+      telephone
+      <input
+        type="tel"
+        pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}"
+        placeholder="(123) 456-7890"
+      />
+      <button type="submit">submit</button>
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <input type="radio" name="gender" value="other" /> Other
+
+      <textarea cols="50"></textarea>
+
+      <select>
+        <option disabled selected>Select an option</option>
+        <option>Banana</option>
+        <option>Orange</option>
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Orange</option>
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Orange</option>
+      </select>
+    </form>
+  </body>
+</html>

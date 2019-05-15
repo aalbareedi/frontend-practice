@@ -42,28 +42,176 @@
       <i class="fas fa-chevron-up upBtn"></i>
     </button>
 
-    <div class="sideNavDock">
-      <!-- 4251 N. Milwaukee Ave Chicago, Illinois 60641
-          (773) 282-0013 -->
-
-      <a
-        id="directionsBtn"
-        href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
-      >
-        <button class="dockContactBtn" type="button">
-          <div class="contactBtnContainer">
-            <div id="directionsIcon" class="contactIcon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contactBtnText" id="directionsBtnText">Directions</div>
+    <div class="sideNavWindow">
+      <div class="sideNavMenu">
+        <div id="sideNavHeading1" class="sideNavHeading">
+          <div class="sideNavText">ABOUT US</div>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
           </div>
-        </button>
-      </a>
+        </div>
+        <div id="sideNavSubHeading1">
+          <div class="subHeadingOpt">Our Philosophy</div>
+          <div class="subHeadingOpt">Hours & Location</div>
+          <div class="subHeadingOpt">Braces Treatment</div>
+          <div class="subHeadingOpt">Our Team</div>
+          <div class="subHeadingOpt">FAQ</div>
+        </div>
+        <div id="sideNavHeading2" class="sideNavHeading">
+          <div class="sideNavText">SOLUTIONS</div>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
+        </div>
+        <div id="sideNavSubHeading2">
+          <div class="subHeadingOpt">About</div>
+          <div class="subHeadingOpt">Partners</div>
+          <div class="subHeadingOpt">Careers</div>
+        </div>
+        <div id="sideNavHeading3" class="sideNavHeading">
+          <div class="sideNavText">COMPANY</div>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
+        </div>
+        <div id="sideNavSubHeading3">
+          <div class="subHeadingOpt">About</div>
+          <div class="subHeadingOpt">Partners</div>
+          <div class="subHeadingOpt">Careers</div>
+        </div>
+        <!-- <div id="sideNavHeading4" class="sideNavHeading">
+          <div class="sideNavText">RESOURCES</div>
+          <div class="dropDownMarker">
+            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
+          </div>
+        </div>
+        <div id="sideNavSubHeading4">
+          <div class="subHeadingOpt">About</div>
+          <div class="subHeadingOpt">Partners</div>
+          <div class="subHeadingOpt">Careers</div>
+        </div> -->
+      </div>
+    </div>
 
+    <form class="contactWindow">
+      <div id="contactFormTitle">
+        <div class="backArrow">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="messageMenuTitle">Message Us</div>
+      </div>
+      <div id="contactFormDescription">
+        <div class="contactFormSubHeading">
+          We would love to hear from you! Please feel free to send us a message
+          below and we will get back to you shortly.
+        </div>
+      </div>
+      <div id="contactFormFullName" class="formOption">
+        <div class="contactFormText">
+          Full Name<span class="formAsterik">*</span>
+        </div>
+        <div class="fullNameField">
+          <div class="formIcon" id="fullNameIcon">
+            <i class="fas fa-user"></i>
+          </div>
+          <input
+            required
+            type="text"
+            class="contactFormInput"
+            placeholder="Firstname Lastname"
+          />
+        </div>
+      </div>
+      <div id="contactFormEmail" class="formOption">
+        <div class="contactFormText">
+          Email Address<span class="formAsterik">*</span>
+        </div>
+        <div class="emailField">
+          <div class="formIcon" id="emailIcon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <input
+            required
+            type="email"
+            class="contactFormInput"
+            placeholder="email@address.com"
+          />
+        </div>
+      </div>
+      <div id="contactFormPhone" class="formOption">
+        <div class="contactFormText">
+          Phone Number<span class="formAsterik">*</span>
+        </div>
+        <div class="phoneField">
+          <div class="formIcon"><i class="fas fa-phone"></i></div>
+          <input
+            required
+            type="tel"
+            class="contactFormInput"
+            placeholder="(555)123-4567"
+          />
+        </div>
+      </div>
+      <div id="contactFormMessage">
+        <div class="contactFormText">
+          Message<span class="formAsterik">*</span>
+        </div>
+        <textarea
+          required
+          class="contactFormInput"
+          id="messageInput"
+          placeholder="Questions, comments, concerns ..."
+        ></textarea>
+      </div>
+      <div id="contactFormButtons">
+        <button type="submit" id="formSubmitBtn" class="contactFormBtn">
+          <i class="fas fa-check"></i>
+          <div class="contactFormBtnText">Send</div>
+        </button>
+        <button type="button" id="formCancelBtn" class="contactFormBtn">
+          <i class="fas fa-times"></i>
+          <div class="contactFormBtnText">Cancel</div>
+        </button>
+      </div>
+    </form>
+
+    <div class="landingContent">
+      <div class="landingHeading">Smile With A Passion</div>
+      <div class="landingSubHeading">
+        Mobile sites make it easy for people to view your business. Mobile sites
+        should behave in a responsive manner.
+      </div>
+      <div class="landingInfoFooter">
+        <div class="landingInfoGrid" id="landingPhone">(773) 282-0013</div>
+        <div class="landingInfoGrid" id="landingAddress">
+          4251 N. Milwaukee Ave Chicago, Illinois 60641
+        </div>
+      </div>
+    </div>
+    <div class="statsContent">
+      <div class="statBox">
+        <div class="statNumber">30</div>
+        <div class="statDescription">YEARS OF CONSISTENT WORK</div>
+      </div>
+      <div class="statBox">
+        <div class="statNumber">5000+</div>
+        <div class="statDescription">HAPPY SMILES</div>
+      </div>
+      <div class="statBox">
+        <div class="statNumber">100%</div>
+        <div class="statDescription">ATTENTION TO DETAIL</div>
+      </div>
+      <div class="statBtnBar">
+        <button class="learnMoreStatBtn">Learn More →</button>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <div class="emptyDockSpace"></div>
+    <div class="sideNavDock">
       <a href="tel:773-282-0013" id="callBtn">
         <button class="dockContactBtn" type="button">
           <div class="contactBtnContainer">
-            <div id="callIcon" class="contactIcon">
+            <div class="contactIcon" id="callIcon">
               <i class="fas fa-phone"></i>
             </div>
             <div class="contactBtnText" id="callBtnText">Call</div>
@@ -71,12 +219,26 @@
         </button>
       </a>
 
-      <button class="sideNavMessageBtn" type="button">
+      <a
+        id="directionsBtn"
+        href="https://www.google.com/maps/place/4251+N+Milwaukee+Ave,+Chicago,+IL+60641/@41.9584064,-87.7545142,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc3f47d6f02d:0x212ff21d3fb2e5b3!8m2!3d41.9584064!4d-87.7523255"
+      >
+        <button class="dockContactBtn" type="button">
+          <div class="contactBtnContainer">
+            <div class="contactIcon" id="directionsIcon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contactBtnText" id="directionsBtnText">Directions</div>
+          </div>
+        </button>
+      </a>
+
+      <button class="dockContactBtn" id="messageBtn" type="button">
         <div class="contactBtnContainer">
-          <div class="messageIcon">
+          <div class="contactIcon" id="messageIcon">
             <i class="fas fa-comment"></i>
           </div>
-          <div class="messageBtnText">Message</div>
+          <div class="contactBtnText" id="messageBtnText">Message</div>
         </div>
       </button>
 
@@ -90,153 +252,5 @@
         <i class="fab fa-facebook-f"></i>
       </button> -->
     </div>
-
-    <div class="sideNavWindow">
-      <div class="sideNavMenu">
-        <div id="sideNavHeading1" class="sideNavHeading">
-          <div class="sideNavText">FEATURES</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-        <div id="sideNavSubHeading1">
-          <div class="subHeadingOpt">About</div>
-          <div class="subHeadingOpt">Partners</div>
-          <div class="subHeadingOpt bottomOpt">Careers</div>
-        </div>
-        <div id="sideNavHeading2" class="sideNavHeading">
-          <div class="sideNavText">SOLUTIONS</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-        <div id="sideNavSubHeading2">
-          <div class="subHeadingOpt">About</div>
-          <div class="subHeadingOpt">Partners</div>
-          <div class="subHeadingOpt bottomOpt">Careers</div>
-        </div>
-        <div id="sideNavHeading3" class="sideNavHeading">
-          <div class="sideNavText">COMPANY</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-        <div id="sideNavSubHeading3">
-          <div class="subHeadingOpt">About</div>
-          <div class="subHeadingOpt">Partners</div>
-          <div class="subHeadingOpt bottomOpt">Careers</div>
-        </div>
-        <div id="sideNavHeading4" class="sideNavHeading">
-          <div class="sideNavText">RESOURCES</div>
-          <div class="dropDownMarker">
-            <i class="fas fa-chevron-down dropDownMarkerIcon"></i>
-          </div>
-        </div>
-        <div id="sideNavSubHeading4">
-          <div class="subHeadingOpt">About</div>
-          <div class="subHeadingOpt">Partners</div>
-          <div class="subHeadingOpt">Careers</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contactWindow">
-      <div id="contactFormTitle">
-        <div class="messageMenuTitle">Message Us</div>
-      </div>
-      <div id="contactFormDescription">
-        <div class="contactFormSubHeading">
-          We would love to hear from you! Please feel free to send us a message
-          below and we will get back to you shortly.
-        </div>
-      </div>
-      <div id="contactFormFullName">
-        <div class="firstNameField">
-          <input
-            required
-            type="text"
-            class="contactFormInput"
-            placeholder="First Name"
-          />
-        </div>
-        <div class="lastNameField">
-          <input
-            required
-            type="text"
-            class="contactFormInput"
-            placeholder="Last Name"
-          />
-        </div>
-      </div>
-      <div id="contactFormEmail">
-        <div class="emailField">
-          <input
-            required
-            type="email"
-            class="contactFormInput"
-            placeholder="Email"
-          />
-        </div>
-      </div>
-      <div id="contactFormPhone">
-        <div id="phoneField">
-          <input
-            required
-            type="tel"
-            class="contactFormInput"
-            placeholder="Phone Number"
-          />
-        </div>
-      </div>
-      <div id="contactFormMessage">
-        <textarea
-          required
-          class="messageInput"
-          placeholder="Message"
-        ></textarea>
-      </div>
-
-      <div id="contactFormButtons">
-        <button type="submit" id="formSubmitBtn" class="contactFormBtn">
-          <i class="fas fa-check"></i>
-          <div class="contactFormBtnText">Send</div>
-        </button>
-        <button type="button" id="formCancelBtn" class="contactFormBtn">
-          <!-- <i class="fas fa-arrow-left"></i> -->
-          <i class="fas fa-times"></i>
-          <div class="contactFormBtnText">Cancel</div>
-        </button>
-      </div>
-    </div>
-
-    <div class="landingContent">
-      <div class="landingInfoBox">
-        <h1 class="landingHeading">Welcome to my mobile site layout</h1>
-        <div class="landingSubHeading">
-          Mobile sites make it easy for people to view your business. Mobile
-          sites should behave in a responsive manner.
-        </div>
-        <!-- <span>→</span> -->
-      </div>
-    </div>
-    <div class="statsContent">
-      <div class="statBox">
-        <div class="statNumber">30</div>
-        <div class="statDescription">YEARS OF CONSISTENT WORK</div>
-      </div>
-      <div class="statBox">
-        <div class="statNumber">5000+</div>
-        <div class="statDescription">HAPPY SMILES</div>
-      </div>
-      <div class="statBox" id="lastStatBox">
-        <div class="statNumber">100%</div>
-        <div class="statDescription">ATTENTION TO DETAIL</div>
-      </div>
-      <div class="statBtnBar">
-        <button class="learnMoreStatBtn">Learn More →</button>
-      </div>
-    </div>
-    <div class="footer"></div>
-    <div class="emptyDockSpace"></div>
   </body>
 </html>

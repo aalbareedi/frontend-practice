@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div h1:first-child {
+  background-color: pink;
+}
+
+p:first-child {
+  background-color: yellow;
+}

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.myImage {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0px -100px;
+  /* width: 100%;
+  height: 100%; */
+}
